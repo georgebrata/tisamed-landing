@@ -220,6 +220,7 @@ body {
   background-color: #bc4749;
   color: #edf6f9;
   align-self: end;
+  white-space: nowrap;
   padding: 1.2rem;
 }
 
