@@ -136,8 +136,6 @@
           <li><a class="main-nav-link" href="index.html">Home</a></li>
           <li><a class="main-nav-link" href="about.html">About</a></li>
           <li><a class="main-nav-link" href="services.html">Services</a></li>
-          <li><a class="main-nav-link" href="elements.html">Elements</a></li>
-          <li><a class="main-nav-link" href="contact.html">Contact</a></li>
           <li><a class="main-nav-link nav-cta" href="blog.html">Blog</a></li>
         </ul>
       </nav>
@@ -166,8 +164,10 @@
               domeniul medical, vă oferă consultant medicala la cea mai înaltă
               calitate.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Get well now</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="./programare" class="btn btn--full margin-right-sm"
+              >Creează programare</a
+            >
+            <a href="#desprenoi" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -196,7 +196,7 @@
                 />
               </div>
               <p class="delivered-text">
-                <span>Peste 250.000</span> de pacienți au fost luați de anul
+                <span>Peste 2.500</span> de pacienți au fost luați de anul
                 trecut!
               </p>
             </div>
@@ -211,7 +211,7 @@
         </div>
       </section>
 
-      <section class="section-featured">
+      <!-- <section class="section-featured">
         <div class="container">
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos">
@@ -231,22 +231,19 @@
             <img src="assets/images/logos/usa-today.png" alt="USA Today logo" />
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section-how">
-        <div class="container">
+        <div id="desprenoi" class="container">
           <span class="subheading">Despre noi</span>
-          <h2 class="heading-secondary">
-            Bine ați venit pe site-ul TISAMED, cabinetul dvs. de încredere
-            pentru obstetrică și ginecologie în Oradea.
-          </h2>
+          <h2 class="heading-secondary">Bine ați venit la TISAMED</h2>
         </div>
 
         <div class="container grid grid--2-cols grid--center-v">
           <!-- STEP 01 -->
           <div class="step-text-box">
             <p class="step-number">01</p>
-            <h3 class="heading-tertiary">De ce a fost fondat Tasued</h3>
+            <h3 class="heading-tertiary">De ce a fost fondat Tisamed</h3>
             <p class="step-description">
               TISAMED a fost fondat cu scopul de a oferi servicii medicale de
               înaltă calitate în domeniul obstetricii și ginecologiei. Echipa
@@ -261,7 +258,7 @@
             <img
               src="assets/images/app/app-screen-1.png"
               class="step-img"
-              alt="iPhone app
+              alt="app screen
             preferences selection screen"
             />
           </div>
@@ -287,9 +284,7 @@
           <!-- STEP 03 -->
           <div class="step-text-box">
             <p class="step-number">03</p>
-            <h3 class="heading-tertiary">
-              De ce suntem uniciAparatura moderna
-            </h3>
+            <h3 class="heading-tertiary">Aparatură modernă</h3>
             <p class="step-description">
               Aparatura principală constă dintr-un ecograf ultra-performant
               Voluson E8 -unul dintre cele mai performante echipamente
@@ -338,7 +333,7 @@
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Ecografie tridimensionala ( 3D , 4d )</span>
+                <span>tridimensională (3D, 4D)</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
@@ -567,7 +562,10 @@
 
       <section class="section-pricing">
         <div class="container">
-          <span class="subheading">Creează programare acum</span>
+          <span class="subheading"
+            >Update this text to "Vă mulțumim pentru alegerea TISAMED ca
+            partener în îngrijirea sănătății dvs.</span
+          >
           <h2 class="heading-tertiary">Nu mai așteptați!</h2>
           <p class="cta-text">
             Sănătatea dvs. este prețioasă. Faceți primul pas către o îngrijire
@@ -605,12 +603,6 @@
               <span class="list-icon" name="checkmark-outline">Joi </span>
               <span> 09:00 - 13:00 and 14:00 - 20:00 </span>
             </li>
-            <li class="list-item list-item--outline">
-              <span class="list-icon" name="checkmark-outline"
-                >Vineri-Duminică
-              </span>
-              <span> -Închis </span>
-            </li>
           </div>
         </div>
       </section>
@@ -619,10 +611,7 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">
-                Vă mulțumim pentru alegerea TISAMED ca partener în îngrijirea
-                sănătății dvs.
-              </h2>
+              <h2 class="heading-secondary">CREEAZĂ PROGRAMARE ACUM</h2>
               <p class="cta-text">
                 Vă așteptăm cu drag la cabinetul nostru din Oradea!
               </p>
@@ -649,15 +638,26 @@
                 </div>
 
                 <div>
-                  <label for="select-where">Where did you hear from us?</label>
+                  <label for="select-where">Data</label>
                   <input type="date" name="" id="" />
                 </div>
                 <div>
                   <label for="srange">Ora </label>
-                  <input type="range" name="range" id="range" />
+                  <select name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                  </select>
                 </div>
 
-                <button class="btn btn--form">Book Apointment</button>
+                <button class="btn btn--form">Creează programare</button>
               </form>
             </div>
           </div>
@@ -696,7 +696,7 @@
 
           <p class="copyright">
             Copyright &copy; <span class="copyright-year">2027</span> de către
-            Tisamed, Inc. Toate drepturile rezervate.
+            SC Tisamed SRL
           </p>
         </div>
 
@@ -708,17 +708,17 @@
               Bihor Pentru programări sau întrebări, ne puteți contacta la:
             </p>
             <p>
-              <a class="footer-link" href="tel:415-201-6370"
-                >0722 556 665 and 0359 443 443</a
-              ><br />
-              <a class="footer-link" href="tiramirela@yahoo.com"
+              <a href="tel:+40722556665"> 0722 556 665</a> <br />
+              <a href="tel:+40359443443">0359 443 443</a> <br />
+
+              <a class="footer-link" href="href=mailto:tiramihaela@yahoo.com"
                 >tiramirela@yahoo.com</a
               >
             </p>
           </address>
         </div>
 
-        <nav class="nav-col">
+        <!-- <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="about.html">About Tisamed</a></li>
@@ -727,7 +727,7 @@
               <a class="footer-link" href="services.html">Services</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
     </footer>
   </body>

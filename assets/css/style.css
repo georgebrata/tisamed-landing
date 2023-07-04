@@ -93,6 +93,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
+
+  @media (max-width: 44em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero-description {
@@ -225,7 +229,9 @@
 }
 
 .step-img {
-  width: 35%;
+  width: 55%;
+  height: 55%;
+  border-radius: 50%;
   /* z-index: 10; */
 }
 
@@ -324,6 +330,10 @@
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
+
+  @media (max-width: 44em) {
+    grid-template-columns: none;
+  }
 }
 
 .testimonials-container {
@@ -498,7 +508,7 @@
 .cta {
   display: grid;
   /* 2/3 = 66.6% + 1/3 = 33.3% */
-  grid-template-columns: 2fr 1fr;
+  /* grid-template-columns: 2fr 1fr; */
   /* background-color: #26a65b; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
@@ -581,7 +591,7 @@
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
 }
 
 .logo-col {
