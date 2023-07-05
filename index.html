@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>blog page</title>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -26,7 +31,95 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script defer src="./script.js"></script>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Tisamed" />
+    <meta
+      name="description"
+      content="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate."
+    />
+    <meta name="image" content="https://i.ibb.co/TKy86tw/tisamed.jpg" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Tisamed" />
+    <meta
+      property="og:image"
+      content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
+    />
+    <meta property="og:image" content="https://i.ibb.co/TKy86tw/tisamed.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta
+      property="twitter:title"
+      content="Tisamed"
+      description="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate."
+    />
+    <meta
+      property="twitter:description"
+      content="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate."
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/TKy86tw/tisamed.jpg"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io" />
+    <meta property="og:title" content="Tisamed" />
+    <meta
+      property="og:description"
+      content="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate."
+    />
+    <meta property="og:image" content="Tisamed" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io" />
+    <meta property="twitter:title" content="Tisamed" />
+    <meta
+      property="twitter:description"
+      content="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate."
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.ibb.co/TKy86tw/tisamed.jpg"
+    />
+    <!-- Meta Tags Generated with https://metatags.io -->
     <title>Tisamed</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link href="assets/vendors/animate/animate.css" rel="stylesheet" />
+    <!-- I00con CSS-->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Owlcarousel CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendors/owl_carousel/owl.carousel.css"
+      media="all"
+    />
+    <!--Template Styles CSS-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style.css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -43,8 +136,6 @@
           <li><a class="main-nav-link" href="index.html">Home</a></li>
           <li><a class="main-nav-link" href="about.html">About</a></li>
           <li><a class="main-nav-link" href="services.html">Services</a></li>
-          <li><a class="main-nav-link" href="elements.html">Elements</a></li>
-          <li><a class="main-nav-link" href="contact.html">Contact</a></li>
           <li><a class="main-nav-link nav-cta" href="blog.html">Blog</a></li>
         </ul>
       </nav>
@@ -73,8 +164,10 @@
               domeniul medical, vă oferă consultant medicala la cea mai înaltă
               calitate.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm">Get well now</a>
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="./programare" class="btn btn--full margin-right-sm"
+              >Creează programare</a
+            >
+            <a href="#desprenoi" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -103,7 +196,7 @@
                 />
               </div>
               <p class="delivered-text">
-                <span>Peste 250.000</span> de pacienți au fost luați de anul
+                <span>Peste 2.500</span> de pacienți au fost luați de anul
                 trecut!
               </p>
             </div>
@@ -118,7 +211,7 @@
         </div>
       </section>
 
-      <section class="section-featured">
+      <!-- <section class="section-featured">
         <div class="container">
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos">
@@ -138,22 +231,19 @@
             <img src="assets/images/logos/usa-today.png" alt="USA Today logo" />
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="section-how">
-        <div class="container">
+        <div id="desprenoi" class="container">
           <span class="subheading">Despre noi</span>
-          <h2 class="heading-secondary">
-            Bine ați venit pe site-ul TISAMED, cabinetul dvs. de încredere
-            pentru obstetrică și ginecologie în Oradea.
-          </h2>
+          <h2 class="heading-secondary">Bine ați venit la TISAMED</h2>
         </div>
 
         <div class="container grid grid--2-cols grid--center-v">
           <!-- STEP 01 -->
           <div class="step-text-box">
             <p class="step-number">01</p>
-            <h3 class="heading-tertiary">De ce a fost fondat Tasued</h3>
+            <h3 class="heading-tertiary">De ce a fost fondat Tisamed</h3>
             <p class="step-description">
               TISAMED a fost fondat cu scopul de a oferi servicii medicale de
               înaltă calitate în domeniul obstetricii și ginecologiei. Echipa
@@ -168,7 +258,7 @@
             <img
               src="assets/images/app/app-screen-1.png"
               class="step-img"
-              alt="iPhone app
+              alt="app screen
             preferences selection screen"
             />
           </div>
@@ -194,9 +284,7 @@
           <!-- STEP 03 -->
           <div class="step-text-box">
             <p class="step-number">03</p>
-            <h3 class="heading-tertiary">
-              De ce suntem uniciAparatura moderna
-            </h3>
+            <h3 class="heading-tertiary">Aparatură modernă</h3>
             <p class="step-description">
               Aparatura principală constă dintr-un ecograf ultra-performant
               Voluson E8 -unul dintre cele mai performante echipamente
@@ -245,7 +333,7 @@
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
-                <span>Ecografie tridimensionala ( 3D , 4d )</span>
+                <span>tridimensională (3D, 4D)</span>
               </li>
               <li class="list-item">
                 <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
@@ -474,7 +562,10 @@
 
       <section class="section-pricing">
         <div class="container">
-          <span class="subheading">Creează programare acum</span>
+          <span class="subheading"
+            >Update this text to "Vă mulțumim pentru alegerea TISAMED ca
+            partener în îngrijirea sănătății dvs.</span
+          >
           <h2 class="heading-tertiary">Nu mai așteptați!</h2>
           <p class="cta-text">
             Sănătatea dvs. este prețioasă. Faceți primul pas către o îngrijire
@@ -512,12 +603,6 @@
               <span class="list-icon" name="checkmark-outline">Joi </span>
               <span> 09:00 - 13:00 and 14:00 - 20:00 </span>
             </li>
-            <li class="list-item list-item--outline">
-              <span class="list-icon" name="checkmark-outline"
-                >Vineri-Duminică
-              </span>
-              <span> -Închis </span>
-            </li>
           </div>
         </div>
       </section>
@@ -526,10 +611,7 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">
-                Vă mulțumim pentru alegerea TISAMED ca partener în îngrijirea
-                sănătății dvs.
-              </h2>
+              <h2 class="heading-secondary">CREEAZĂ PROGRAMARE ACUM</h2>
               <p class="cta-text">
                 Vă așteptăm cu drag la cabinetul nostru din Oradea!
               </p>
@@ -556,15 +638,26 @@
                 </div>
 
                 <div>
-                  <label for="select-where">Where did you hear from us?</label>
+                  <label for="select-where">Data</label>
                   <input type="date" name="" id="" />
                 </div>
                 <div>
                   <label for="srange">Ora </label>
-                  <input type="range" name="range" id="range" />
+                  <select name="" id="">
+                    <option value="">--Select--</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                  </select>
                 </div>
 
-                <button class="btn btn--form">Book Apointment</button>
+                <button class="btn btn--form">Creează programare</button>
               </form>
             </div>
           </div>
@@ -602,8 +695,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 de către Tisamed, Inc. Toate drepturile
-            rezervate.
+            Copyright &copy; <span class="copyright-year">2027</span> de către
+            SC Tisamed SRL
           </p>
         </div>
 
@@ -615,17 +708,17 @@
               Bihor Pentru programări sau întrebări, ne puteți contacta la:
             </p>
             <p>
-              <a class="footer-link" href="tel:415-201-6370"
-                >0722 556 665 and 0359 443 443</a
-              ><br />
-              <a class="footer-link" href="tiramirela@yahoo.com"
+              <a href="tel:+40722556665"> 0722 556 665</a> <br />
+              <a href="tel:+40359443443">0359 443 443</a> <br />
+
+              <a class="footer-link" href="href=mailto:tiramihaela@yahoo.com"
                 >tiramirela@yahoo.com</a
               >
             </p>
           </address>
         </div>
 
-        <nav class="nav-col">
+        <!-- <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
             <li><a class="footer-link" href="about.html">About Tisamed</a></li>
@@ -634,7 +727,7 @@
               <a class="footer-link" href="services.html">Services</a>
             </li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
     </footer>
   </body>
