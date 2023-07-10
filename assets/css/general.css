@@ -276,7 +276,7 @@ body {
   outline: none;
   /* outline: 4px dotted #26a65b; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(38, 166, 91, 0.5);
+  /* box-shadow: 0 0 0 0.8rem rgba(38, 166, 91, 0.5); */
 }
 
 /* HELPER/SETTINGS CLASSES */

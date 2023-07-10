@@ -57,13 +57,23 @@
   background-color: #26a65b;
 }
 
+.main-nav-link-active {
+  width: 100%;
+  border-bottom: 4px solid #26a65b;
+}
+
+.main-nav-link-active,
+.main-nav-link-active:hover {
+  border-bottom: 2px solid #26a65b;
+}
+
 /* MOBILE */
 .btn-mobile-nav {
   border: none;
   background: none;
   cursor: pointer;
 
-  display: none;
+  display: block;
 }
 
 .icon-mobile-nav {

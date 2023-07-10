@@ -25,3 +25,26 @@ function getFullYear() {
 }
 
 getFullYear();
+
+function active() {
+  const btnContainer = document.getElementsByClassName('main-nav-list');
+
+  console.log(btnContainer);
+  // Get all buttons with class="btn" inside the container
+  const btns = btnContainer[0].getElementsByClassName('main-nav-link');
+
+  console.log(btns);
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      var current = document.getElementsByClassName('main-nav-link-active');
+      current[0].className = current[0].className.replace(
+        'main-nav-link-active',
+        ''
+      );
+      this.className += ' main-nav-link-active';
+    });
+  }
+}
+
+active();
