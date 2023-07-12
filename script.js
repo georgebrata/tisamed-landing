@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
-  var flex = document.createElement('div');
+  const flex = document.createElement('div');
   flex.style.display = 'flex';
   flex.style.flexDirection = 'column';
   flex.style.rowGap = '1px';
@@ -10,7 +10,7 @@ function checkFlexGap() {
   flex.appendChild(document.createElement('div'));
 
   document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
+  const isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
 
   if (!isSupported) document.body.classList.add('no-flexbox-gap');
@@ -25,3 +25,23 @@ function getFullYear() {
 }
 
 getFullYear();
+
+function active() {
+  const btnContainer = document.getElementsByClassName('main-nav-list');
+  // Get all buttons with class="btn" inside the container
+  const btns = btnContainer[0].getElementsByClassName('main-nav-link');
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      const current = document.getElementsByClassName('main-nav-link-active');
+      current[0].className = current[0].className.replace(
+        'main-nav-link-active',
+        ''
+      );
+      this.className += ' main-nav-link-active';
+    });
+  }
+}
+
+active();

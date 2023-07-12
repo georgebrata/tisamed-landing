@@ -18,9 +18,9 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="assets/css/general.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/queries.css" />
+    <link rel="stylesheet" href="../assets/css/general.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/queries.css" />
 
     <script
       type="module"
@@ -92,28 +92,28 @@
     <!-- Meta Tags Generated with https://metatags.io -->
     <title>Tisamed</title>
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
     <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Animate CSS -->
-    <link href="assets/vendors/animate/animate.css" rel="stylesheet" />
+    <link href="../assets/vendors/animate/animate.css" rel="stylesheet" />
     <!-- I00con CSS-->
     <link
       rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+      href="../assets/vendors/font-awesome/css/font-awesome.min.css"
     />
     <!-- Owlcarousel CSS-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/vendors/owl_carousel/owl.carousel.css"
+      href="../assets/vendors/owl_carousel/owl.carousel.css"
       media="all"
     />
     <!--Template Styles CSS-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="assets/css/style.css"
+      href="../assets/css/style.css"
       media="all"
     />
     <link
@@ -123,23 +123,34 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a href="../">
         <img
           class="logo"
           alt="Tisamed logo"
-          src="assets/images/logos/app-logo.png"
+          src="../assets/images/logos/app-logo.png"
         />
       </a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="index.html">Home</a></li>
-          <li><a class="main-nav-link" href="about.html">About</a></li>
-          <li><a class="main-nav-link" href="services.html">Services</a></li>
-          <li><a class="main-nav-link nav-cta" href="blog.html">Blog</a></li>
+          <li>
+            <a class="main-nav-link main-nav-link-active" href="./index.html"
+              >Acasa</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="../despre">Despre</a>
+          </li>
+          <li><a class="main-nav-link" href="../servicii/">Servicii</a></li>
+          <li><a class="main-nav-link" href="../echipa/">Echipa</a></li>
+          <li><a class="main-nav-link" href="../galerie/">Galerie</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="../programare/"
+              >Fa o programare</a
+            >
+          </li>
         </ul>
       </nav>
-
       <button class="btn-mobile-nav">
         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
@@ -150,10 +161,7 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1 class="heading-primary">
-              Bine ați venit pe site-ul TISAMED, cabinetul dvs. de încredere
-              pentru obstetrică și ginecologie în Oradea.
-            </h1>
+            <h1 class="heading-primary">Bine ați venit pe site-ul TISAMED</h1>
             <p class="hero-description">
               Ne dedicăm oferirii de servicii de calitate și îngrijire
               personalizată pentru sănătatea femeilor din toate etapele vieții.
@@ -164,34 +172,35 @@
               domeniul medical, vă oferă consultant medicala la cea mai înaltă
               calitate.
             </p>
-            <a href="./programare" class="btn btn--full margin-right-sm"
-              >Creează programare</a
-            >
-            <a href="#desprenoi" class="btn btn--outline">Learn more &darr;</a>
+            <div class="hero-btn-container">
+              <a href="./programare" class="btn btn--full margin-right-sm"
+                >Creează programare</a
+              >
+            </div>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
-                  src="assets/images/customers/customer-1.jpg"
+                  src="../assets/images/customers/customer-1.jpg"
                   alt="Customer photo"
                 />
                 <img
-                  src="assets/images/customers/customer-2.jpg"
+                  src="../assets/images/customers/customer-2.jpg"
                   alt="Customer photo"
                 />
                 <img
-                  src="assets/images/customers/customer-3.jpg"
+                  src="../assets/images/customers/customer-3.jpg"
                   alt="Customer photo"
                 />
                 <img
-                  src="assets/images/customers/customer-4.jpg"
+                  src="../assets/images/customers/customer-4.jpg"
                   alt="Customer photo"
                 />
                 <img
-                  src="assets/images/customers/customer-5.jpg"
+                  src="../assets/images/customers/customer-5.jpg"
                   alt="Customer photo"
                 />
                 <img
-                  src="assets/images/customers/customer-6.jpg"
+                  src="../assets/images/customers/customer-6.jpg"
                   alt="Customer photo"
                 />
               </div>
@@ -203,7 +212,7 @@
           </div>
           <div class="hero-img-box">
             <img
-              src="assets/images/gallery/gallery-1.jpg"
+              src="../assets/images/gallery/gallery-1.jpg"
               class="hero-img"
               alt="A medical practictioner"
             />
@@ -216,19 +225,19 @@
           <h2 class="heading-featured-in">As featured in</h2>
           <div class="logos">
             <img
-              src="assets/images/logos/techcrunch.png"
+              src="../assets/images/logos/techcrunch.png"
               alt="Techcrunch logo"
             />
             <img
-              src="assets/images/logos/business-insider.png"
+              src="../assets/images/logos/business-insider.png"
               alt="Business Insider logo"
             />
             <img
-              src="assets/images/logos/the-new-york-times.png"
+              src="../assets/images/logos/the-new-york-times.png"
               alt="The New York Times logo"
             />
-            <img src="assets/images/logos/forbes.png" alt="Forbes logo" />
-            <img src="assets/images/logos/usa-today.png" alt="USA Today logo" />
+            <img src="../assets/images/logos/forbes.png" alt="Forbes logo" />
+            <img src="../assets/images/logos/usa-today.png" alt="USA Today logo" />
           </div>
         </div>
       </section> -->
@@ -256,7 +265,7 @@
 
           <div class="step-img-box">
             <img
-              src="assets/images/app/app-screen-1.png"
+              src="../assets/images/app/app-screen-1.png"
               class="step-img"
               alt="app screen
             preferences selection screen"
@@ -266,7 +275,7 @@
           <!-- STEP 02 -->
           <div class="step-img-box">
             <img
-              src="assets/images/app/app-screen-2.png"
+              src="../assets/images/app/app-screen-2.png"
               class="step-img"
               alt="iPhone app
             meal approving plan screen"
@@ -294,7 +303,7 @@
           </div>
           <div class="step-img-box">
             <img
-              src="assets/images/app/app-screen-3.png"
+              src="../assets/images/app/app-screen-3.png"
               class="step-img"
               alt="iPhone app
             delivery screen"
@@ -418,7 +427,7 @@
               <img
                 class="testimonial-img"
                 alt="Photo of customer Dave Bryson"
-                src="assets/images/customers/dave.jpg"
+                src="../assets/images/customers/dave.jpg"
               />
               <blockquote class="testimonial-text">
                 "Îngrijirea pe care am primit-o în timpul sarcinii mele a fost
@@ -432,7 +441,7 @@
               <img
                 class="testimonial-img"
                 alt="Photo of customer Ben Hadley"
-                src="assets/images/customers/ben.jpg"
+                src="../assets/images/customers/ben.jpg"
               />
               <blockquote class="testimonial-text">
                 Am avut mereu o experiență excelentă la TISAMED. Personalul este
@@ -445,7 +454,7 @@
               <img
                 class="testimonial-img"
                 alt="Photo of customer Steve Miller"
-                src="assets/images/customers/steve.jpg"
+                src="../assets/images/customers/steve.jpg"
               />
               <blockquote class="testimonial-text">
                 Tisamed m-a impresionat cu personalul lor atent, medicii
@@ -459,7 +468,7 @@
               <img
                 class="testimonial-img"
                 alt="Photo of customer Hannah Smith"
-                src="assets/images/customers/hannah.jpg"
+                src="../assets/images/customers/hannah.jpg"
               />
               <blockquote class="testimonial-text">
                 Tisamed a mers dincolo de a oferi îngrijiri personalizate,
@@ -474,7 +483,7 @@
         <div class="gallery">
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-1.jpg"
+              src="../assets/images/gallery/gallery-1.jpg"
               alt="Photo of beautifully
             arranged food"
             />
@@ -482,77 +491,77 @@
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-2.jpg"
+              src="../assets/images/gallery/gallery-2.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-3.jpg"
+              src="../assets/images/gallery/gallery-3.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-4.jpg"
+              src="../assets/images/gallery/gallery-4.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-5.jpg"
+              src="../assets/images/gallery/gallery-5.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-6.jpg"
+              src="../assets/images/gallery/gallery-6.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-7.jpg"
+              src="../assets/images/gallery/gallery-7.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-8.jpg"
+              src="../assets/images/gallery/gallery-8.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-9.jpg"
+              src="../assets/images/gallery/gallery-9.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-10.jpg"
+              src="../assets/images/gallery/gallery-10.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-11.jpg"
+              src="../assets/images/gallery/gallery-11.jpg"
               alt="Photo of beautifully
             arranged food"
             />
           </figure>
           <figure class="gallery-item">
             <img
-              src="assets/images/gallery/gallery-12.jpg"
+              src="../assets/images/gallery/gallery-12.jpg"
               alt="Photo of beautifully
             arranged food"
             />
@@ -672,7 +681,7 @@
             <img
               class="logo"
               alt="Tisamed logo"
-              src="assets/images/logos/app-logo.png"
+              src="../assets/images/logos/app-logo.png"
             />
           </a>
 
@@ -708,8 +717,10 @@
               Bihor Pentru programări sau întrebări, ne puteți contacta la:
             </p>
             <p>
-              <a href="tel:+40722556665"> 0722 556 665</a> <br />
-              <a href="tel:+40359443443">0359 443 443</a> <br />
+              <a class="footer-link" href="tel:+40722556665"> 0722 556 665</a>
+              <br />
+              <a class="footer-link" href="tel:+40359443443">0359 443 443</a>
+              <br />
 
               <a class="footer-link" href="href=mailto:tiramihaela@yahoo.com"
                 >tiramirela@yahoo.com</a
