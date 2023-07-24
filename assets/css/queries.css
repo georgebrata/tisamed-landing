@@ -5,6 +5,10 @@
 /**************************/
 
 @media (max-width: 84em) {
+  .wrapper-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .hero {
     max-width: 120rem;
   }
@@ -27,6 +31,10 @@
 /**************************/
 
 @media (max-width: 75em) {
+  .wrapper-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   html {
     /* 9px / 16px  */
     font-size: 56.25%;
@@ -77,6 +85,7 @@
     padding: 0 8rem;
     gap: 6.4rem;
   }
+
   .hero-btn-container {
     display: flex;
     align-items: center;
@@ -198,6 +207,10 @@
 /**************************/
 
 @media (max-width: 44em) {
+  .wrapper-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
@@ -242,6 +255,9 @@
 /**************************/
 
 @media (max-width: 34em) {
+  .wrapper-grid {
+    grid-template-columns: 1fr;
+  }
   .grid {
     row-gap: 4.8rem;
   }
@@ -328,3 +344,9 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+
+@media (min-width: 84) {
+  .wrapper-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
