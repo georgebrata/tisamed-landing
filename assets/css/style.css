@@ -731,3 +731,43 @@
   line-height: 1.6;
   margin: 1rem 2rem;
 }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery .heading {
+  width: 20%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.gallery .heading h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 0.3rem solid var(--color-gray);
+}
+.gallery .heading h2 span {
+  font-weight: 100;
+}
+
+.gallery .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.gallery .box .dream img {
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}

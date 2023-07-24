@@ -31,10 +31,6 @@
 /**************************/
 
 @media (max-width: 75em) {
-  .wrapper-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   html {
     /* 9px / 16px  */
     font-size: 56.25%;
@@ -196,6 +192,18 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .gallery .box {
+    flex-direction: column;
+  }
+
+  .gallery .box .dream {
+    width: 100%;
+  }
+
+  .gallery .heading {
+    width: 100%;
+  }
 }
 
 .btn-mobile-nav {
@@ -334,6 +342,11 @@
   }
   .btn-mobile-nav {
     display: block;
+  }
+
+  .gallery .heading {
+    padding-bottom: 50px;
+    margin: 0 auto;
   }
 }
 
