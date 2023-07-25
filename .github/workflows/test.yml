@@ -1,0 +1,41 @@
+# 2 enviroments:
+## CI on TEST env - test branch -> test.tisamed-oradea.ro
+
+name: CI
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "test" branch
+  push:
+    branches: [ "test" ]
+  pull_request:
+    branches: [ "test" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  cd:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ftp.tisamed-oradea.ro
+          username: deploy@tisamed-oradea.ro
+          password: ${{secrets.FTP_PASSWORD}}
+          local-dir: ./
