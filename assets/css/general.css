@@ -15,10 +15,6 @@
 }
 
 html {
-  /* font-size: 10px; */
-
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
 }
@@ -124,7 +120,6 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
   /* Only necessary for .btn */
@@ -166,13 +161,17 @@ body {
   background-color: var(--color-tertiary-light);
   color: var(--color-white);
   align-self: end;
+  height: 4rem;
   white-space: nowrap;
-  padding: 1.2rem;
 }
 
 .btn--form:hover {
   background-color: var(--color-tertiary-light-2);
   color: var(--color-white);
+}
+
+.btn--pad {
+  padding: 1.2rem;
 }
 
 .link:link,

@@ -63,63 +63,263 @@
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <div class="wrapper-grid">
-      <div class="container">
-        <div class="banner-img"></div>
+    <header class="header">
+      <a href="../">
         <img
-          src="../assets/images/gallery/gallery-1.jpg"
-          alt="profile image"
-          class="profile-img"
+          class="logo"
+          alt="Tisamed logo"
+          src="../assets/images/logos/app-logo.png"
         />
-        <h1 class="name">Joel Jackson</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias, pariatur?
-        </p>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="../">Acasa</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="../despre">Despre</a>
+          </li>
+          <li><a class="main-nav-link" href="../servicii/">Servicii</a></li>
+          <li>
+            <a class="main-nav-link main-nav-link-active" href="../echipa/"
+              >Echipa</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="../galerie/">Galerie</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="../contact/">Contact</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="../programare/"
+              >Fa o programare</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon> -->
+      </button>
+    </header>
+    <main>
+      <div class="wrapper-grid">
+        <div class="container">
+          <div class="banner-img"></div>
+          <img
+            src="../assets/images/doctors/doc-5.jpg"
+            alt="profile image"
+            class="profile-img"
+          />
+          <h1 class="name">Dr. Elena Popescu</h1>
+          <p class="position">Medic Primar Endocrinolog</p>
+          <p class="description">
+            Dr. Elena Popescu este o cardiolog renumită, cu o vastă experiență
+            în diagnosticarea și tratarea afecțiunilor cardiovasculare.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-instagram"
+                  role="img"
+                  aria-label="logo instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-facebook"
+                  role="img"
+                  aria-label="logo facebook"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <div class="banner-img"></div>
+          <img
+            src="../assets/images/doctors/doc-3.jpg"
+            alt="profile image"
+            class="profile-img"
+          />
+          <h1 class="name">Dr. Andrei Ionescu</h1>
+          <p class="position">Medic Primar Ortoped</p>
+          <p class="description">
+            Dr. Andrei Ionescu este un oncolog dedicat, angajat în lupta
+            împotriva cancerului și oferirea de opțiuni de tratament avansate
+            pacienților săi.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-instagram"
+                  role="img"
+                  aria-label="logo instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-facebook"
+                  role="img"
+                  aria-label="logo facebook"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="banner-img"></div>
+          <img
+            src="../assets/images/doctors/doc-2.jpg"
+            alt="profile image"
+            class="profile-img"
+          />
+          <h1 class="name">Dr. Maria Popa</h1>
+          <p class="position">Medic Specialist Pediatrie</p>
+          <p class="description">
+            Dr. Maria Popa este un pediatru grijuliu și experimentat, devotat
+            oferirii de îngrijiri medicale cuprinzătoare copiilor de toate
+            vârstele.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-instagram"
+                  role="img"
+                  aria-label="logo instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-facebook"
+                  role="img"
+                  aria-label="logo facebook"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="banner-img"></div>
+          <img
+            src="../assets/images/doctors/doc-1.jpg"
+            alt="profile image"
+            class="profile-img"
+          />
+          <h1 class="name">Dr. Ion Dumitrescu</h1>
+          <p class="position">Medic Primar Chirurgie Generală</p>
+          <p class="description">
+            Dr. Ion Dumitrescu este un chirurg ortoped priceput, specializat în
+            înlocuiri articulare și tratamentul leziunilor sportive.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-instagram"
+                  role="img"
+                  aria-label="logo instagram"
+                ></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon
+                  class="social-icon md hydrated"
+                  name="logo-facebook"
+                  role="img"
+                  aria-label="logo facebook"
+                ></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="../assets/images/gallery/gallery-1.jpg"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Joel Jackson</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias, pariatur?
-        </p>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="../" class="footer-logo">
+            <img
+              class="logo"
+              alt="Tisamed logo"
+              src="../assets/images/logos/app-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="copyright-year">2027</span> de către
+            Tisamed, Inc. Toate drepturile rezervate.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact</p>
+          <address class="contacts">
+            <p class="address">
+              Ne puteți găsi la adresa: Str. Mihai Eminescu, Nr 62, Oradea, jud.
+              Bihor Pentru programări sau întrebări, ne puteți contacta la:
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370"
+                >0722 556 665 and 0359 443 443</a
+              ><br />
+              <a class="footer-link" href="tiramirela@yahoo.com"
+                >tiramirela@yahoo.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="about.html">About Tisamed</a></li>
+            <li><a class="footer-link" href="blog.html">Blog</a></li>
+            <li>
+              <a class="footer-link" href="services.html">Services</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="../assets/images/gallery/gallery-1.jpg"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Joel Jackson</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias, pariatur?
-        </p>
-      </div>
-      <div class="container">
-        <div class="banner-img"></div>
-        <img
-          src="../assets/images/gallery/gallery-1.jpg"
-          alt="profile image"
-          class="profile-img"
-        />
-        <h1 class="name">Joel Jackson</h1>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-          pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias, pariatur?
-        </p>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>

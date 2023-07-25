@@ -20,10 +20,6 @@
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .btn-mobile-nav {
-    display: none;
-  }
 }
 
 /**************************/
@@ -206,10 +202,6 @@
   }
 }
 
-.btn-mobile-nav {
-  display: block;
-}
-
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
@@ -244,7 +236,7 @@
 
   .logo-col,
   .address-col {
-    grid-column: span 3;
+    grid-column: span 5;
   }
 
   .nav-col {
@@ -263,6 +255,11 @@
 /**************************/
 
 @media (max-width: 34em) {
+  .contact-container {
+    background-color: var(--color-primary-light);
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .wrapper-grid {
     grid-template-columns: 1fr;
   }
@@ -279,7 +276,7 @@
   .btn,
   .btn:link,
   .btn:visited {
-    padding: 2.4rem 1.6rem;
+    /* padding: 2.4rem 1.6rem; */
   }
 
   .section-hero {
