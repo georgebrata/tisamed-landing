@@ -38,4 +38,4 @@ jobs:
           server: ftp.tisamed-oradea.ro
           username: deploy@tisamed-oradea.ro
           password: ${{secrets.FTP_PASSWORD}}
-          local-dir: .
+          local-dir: ./
