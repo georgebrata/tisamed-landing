@@ -1,9 +1,9 @@
 ---
 name: Issue template
 about: Describe this issue template's purpose here.
-title: ''
+title: 'Issue #69'
 labels: ''
-assignees: ''
+assignees: adonisjoe
 
 ---
 
