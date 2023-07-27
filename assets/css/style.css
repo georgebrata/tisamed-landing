@@ -359,6 +359,13 @@
 
 .testimonials-container {
   padding: 9.6rem;
+
+  @media (max-width: 59em) {
+    padding: 1.3rem;
+  }
+  @media (max-width: 34em) {
+    padding: 3.6rem;
+  }
 }
 
 .testimonials {
@@ -734,7 +741,7 @@
   margin: 1rem 2rem;
 }
 
-.gallery {
+.main-element .gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
