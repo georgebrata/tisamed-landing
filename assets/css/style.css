@@ -359,6 +359,13 @@
 
 .testimonials-container {
   padding: 9.6rem;
+
+  @media (max-width: 59em) {
+    padding: 1.3rem;
+  }
+  @media (max-width: 34em) {
+    padding: 3.6rem;
+  }
 }
 
 .testimonials {
@@ -674,6 +681,7 @@
 .footer-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
+  white-space: nowrap;
   color: var(--color-gray);
   transition: all 0.3s;
 }
@@ -681,4 +689,162 @@
 .footer-link:hover,
 .footer-link:active {
   color: var(--color-gray);
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+.wrapper-grid .container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
+  border-radius: 1rem;
+  position: relative;
+}
+
+.banner-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, var(--color-primary-light), #ffffff);
+  height: 10rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-img {
+  width: 15rem;
+  height: 15rem;
+  clip-path: circle(60px at center);
+  margin-top: 4.5rem;
+}
+
+.name {
+  font-style: 1.5rem;
+}
+.description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 1rem 2rem;
+}
+
+.main-element .gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gallery .heading {
+  width: 20%;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.gallery .heading h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 0.3rem solid var(--color-gray);
+}
+.gallery .heading h2 span {
+  font-weight: 100;
+}
+
+.gallery .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+.gallery .box .dream img {
+  width: 100%;
+  padding-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ABOUT CONTACT DESIGN */
+.contact-container {
+  background: linear-gradient(90deg, #26a65b, #2bbc67);
+
+  width: 95%;
+  margin: 2rem auto 0 auto;
+  min-width: 42rem;
+  padding: 3.5rem 5rem;
+  /* transform: translate(-50%, -50%); */
+  position: relative;
+  /* left: 50%; */
+  /* top: 0; */
+  border-radius: 1rem;
+  box-shadow: 2rem 3rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.contact-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffff;
+}
+.contact-container p {
+  margin: auto;
+  width: 100%;
+  margin-top: 1rem;
+  color: #f0f0f0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.contact-container form {
+  margin: auto;
+  /* position: absolute; */
+  margin: 3rem auto 0 auto;
+}
+
+.contact-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact-container label {
+  color: #f0f0f0;
+  font-size: 1.5rem;
+}
+.contact-container textarea,
+.contact-container input {
+  color: #333333;
+  width: 100%;
+  font-weight: 400;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1.2px solid #c4cae0;
+  margin-top: 0.5rem;
+}
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: var(--color-gray-light);
+}
+
+.contact-container textarea {
+  resize: none;
 }
