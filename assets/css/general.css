@@ -106,6 +106,9 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.main-program .heading-secondary {
+  margin-bottom: 4rem;
+}
 .subheading {
   display: block;
   font-size: 1.6rem;
@@ -113,6 +116,7 @@ body {
   color: var(--color-primary-light);
   text-transform: uppercase;
   margin-bottom: 1.6rem;
+  margin-top: 2rem;
   letter-spacing: 0.75px;
 }
 
