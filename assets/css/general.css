@@ -68,9 +68,9 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* .grid--5-cols {
+.grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-} */
+}
 
 .grid--center-v {
   align-items: center;
@@ -199,7 +199,7 @@ body {
 }
 
 .list-item {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
