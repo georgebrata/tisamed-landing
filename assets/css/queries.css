@@ -341,25 +341,23 @@
     display: block;
   }
 
-
   .gallery .heading {
     padding-bottom: 50px;
     margin: 0 auto;
 
-  .heading-secondary {
-    text-align: center;
-  }
-  .heading-tertiary {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .subheading {
-    text-align: center;
-    margin-top: 2rem;
-
+    .heading-secondary {
+      text-align: center;
+    }
+    .heading-tertiary {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .subheading {
+      text-align: center;
+      margin-top: 2rem;
+    }
   }
 }
-
 /* 
 - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98

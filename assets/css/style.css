@@ -126,6 +126,13 @@
   margin-bottom: 4.8rem;
 }
 
+.hero-img-box {
+  padding: 8rem;
+
+  @media (max-width: 44rem) {
+    padding: 4rem;
+  }
+}
 .hero-img {
   width: 100%;
 }
@@ -134,7 +141,7 @@
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 8rem;
+  margin-top: 4rem 6rem;
 }
 
 .delivered-imgs {
