@@ -1,8 +1,4 @@
-<<<<<<< HEAD:.github/workflows/main.yml
-# CI on PRODUCTION enviroment - main branch -> tisamed-oradea.ro
-=======
 # CI on TEST enviroment - test branch -> test.tisamed-oradea.ro
->>>>>>> 2cd5aa77f6bc4bdf1fe1aebfcb26a8ce4c039c96:.github/workflows/test.yml
 
 name: CI
 # Controls when the workflow will run
