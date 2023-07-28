@@ -85,6 +85,14 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -133,11 +141,12 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  border-radius: 9px;
 
   /* Only necessary for .btn */
   border: none;
