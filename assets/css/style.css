@@ -23,8 +23,13 @@
 /**************************/
 
 .main-nav-list {
+  position: absolute;
+  margin-top: 3rem;
   list-style: none;
   display: flex;
+  width: inherit;
+  background-color: inherit;
+  padding: 5rem 0;
   align-items: center;
   gap: 4.8rem;
 }
@@ -77,7 +82,8 @@
   border: none;
   background: none;
   cursor: pointer;
-
+  position: relative;
+  z-index: 10000;
   display: block;
 
   @media (min-width: 84em) {
@@ -138,10 +144,10 @@
 }
 
 .hero-img-box {
-  padding: 8rem;
+  padding: 8rem 2rem;
 
   @media (max-width: 44rem) {
-    padding: 4rem;
+    padding: 4rem 2rem;
   }
 }
 .hero-img {
@@ -573,7 +579,7 @@
 }
 
 .cta-text-box {
-  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  padding: 4.8rem 2rem 6.4rem 2rem;
   color: var(--color-white);
 }
 
