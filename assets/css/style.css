@@ -112,18 +112,24 @@
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
+  gap: 1rem;
+  align-items: end;
+  justify-items: end;
 
   @media (max-width: 44em) {
     grid-template-columns: 1fr;
+    justify-items: start !important;
   }
 }
 
 .hero-description {
-  font-size: 2rem;
+  font-size: var(--font-size-body-tablet);
   line-height: 1.6;
   margin-bottom: 4.8rem;
+
+  @media (max-width: 59em) {
+    text-align: left;
+  }
 }
 
 .hero-img-box {
@@ -139,8 +145,11 @@
 
 .delivered-meals {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  justify-content: flex-end;
   gap: 1.6rem;
+  width: max-content;
   margin-top: 4rem 6rem;
 }
 
@@ -163,6 +172,7 @@
 .delivered-text {
   font-size: 1.8rem;
   font-weight: 600;
+  width: 100%;
 }
 
 .delivered-text span {
@@ -215,7 +225,7 @@
 }
 
 .step-description {
-  font-size: 1.8rem;
+  font-size: var(--font-size-body-tablet);
   line-height: 1.8;
 }
 
@@ -389,7 +399,7 @@
 }
 
 .testimonial-text {
-  font-size: 1.8rem;
+  font-size: var(--font-size-body-tablet);
   line-height: 1.8;
   margin-bottom: 1.6rem;
 }
@@ -568,7 +578,7 @@
 }
 
 .cta-text {
-  font-size: 1.8rem;
+  font-size: var(--font-size-body-tablet);
   line-height: 1.8;
   margin-bottom: 4.8rem;
 }
