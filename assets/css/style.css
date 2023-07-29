@@ -23,7 +23,6 @@
 /**************************/
 
 .main-nav-list {
-  position: absolute;
   margin-top: 3rem;
   list-style: none;
   display: flex;
@@ -32,6 +31,9 @@
   padding: 5rem 0;
   align-items: center;
   gap: 4.8rem;
+  @media (max-width: 59em) {
+    position: absolute;
+  }
 }
 
 .main-nav-link:link,
@@ -115,6 +117,10 @@
 .section-hero {
   background-color: var(--color-white);
   padding: 4.8rem 0 9.6rem 0;
+
+  padding: 4.8rem 0 9.6rem 0;
+  @media (max-width: 34em) {
+  }
 }
 
 .hero {
