@@ -17,6 +17,14 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
+// Make mobile nav work
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+headerEl = document.querySelector('.header');
+
+btnNavEl.addEventListener('click', () => {
+  return headerEl.classList.toggle('nav-open');
+});
+
 function getFullYear() {
   const yearEl = document.querySelector('.copyright-year');
   const currentYear = new Date().getFullYear();

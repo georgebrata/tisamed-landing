@@ -49,7 +49,7 @@ body {
 .container {
   /* 1140px */
   max-width: 120rem;
-  padding: 0 3.2rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
 }
 
@@ -146,6 +146,7 @@ body {
   height: 4rem;
   font-size: 1.4rem;
   border-radius: 2rem;
+  font-weight: 700;
   text-decoration: none;
 
   /* Only necessary for .btn */
