@@ -153,7 +153,11 @@ body {
   align-self: end;
   height: 4rem;
   white-space: nowrap;
+  grid-column: span 2;
+  margin: 0 auto;
+  width: fit-content;
 }
+
 .btn--form:hover {
   background-color: var(--color-tertiary-light-2);
   color: var(--color-white);
@@ -188,6 +192,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+
 }
 .list-item--outline {
   outline: 2px solid var(--color-white);
