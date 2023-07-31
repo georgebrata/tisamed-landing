@@ -667,7 +667,7 @@
 .contact-container {
   background: linear-gradient(90deg, #26a65b, #2bbc67);
   width: 95%;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 8rem auto;
   min-width: 42rem;
   padding: 3.5rem 5rem;
 
@@ -725,4 +725,8 @@
 }
 .container .position {
   font-size: var(--font-size-caption);
+}
+
+.container-contact {
+  text-align: center;
 }
