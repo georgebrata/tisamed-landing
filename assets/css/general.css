@@ -91,13 +91,23 @@ body {
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
+.heading-secondary--title {
+  text-align: center;
+}
+
+.cta-text-box .heading-secondary--form {
+  margin-bottom: 2rem !important;
+}
+.main-program .heading-secondary--form {
+  margin-bottom: 2rem !important;
+}
 .heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 .main-program .heading-secondary {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 .subheading {
   display: block;
@@ -106,8 +116,12 @@ body {
   color: var(--color-primary-light);
   text-transform: uppercase;
   margin-bottom: 1.6rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   letter-spacing: 0.75px;
+}
+
+.subheading--title {
+  text-align: center;
 }
 .btn,
 .btn:link,
@@ -192,7 +206,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-
 }
 .list-item--outline {
   outline: 2px solid var(--color-white);

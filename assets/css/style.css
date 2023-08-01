@@ -93,8 +93,10 @@
 
 .section-hero {
   background-color: var(--color-white);
-  padding: 4.8rem 0 0rem 0;
+  margin: 8rem 0 0rem 0;
+  padding-top: 2rem;
 }
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -177,7 +179,7 @@
 }
 
 .section-how {
-  padding: 9.6rem 0;
+  padding: 4rem 0;
 }
 .step-number {
   font-size: 8.6rem;
@@ -225,7 +227,8 @@
 }
 
 .section-meals {
-  padding: 9.6rem 0;
+  padding-top: 2rem;
+  margin-top: 4rem;
 }
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -440,8 +443,11 @@
   line-height: 1.8;
 }
 
-.section-cta {
-  padding: 4.8rem 0 12.8rem;
+.section-cta,
+.section-how,
+.section-pricing {
+  padding: 4.8rem 0 0rem;
+  margin-bottom: 6rem;
 }
 .cta {
   display: grid;
@@ -633,15 +639,12 @@
 }
 .gallery .heading {
   text-align: center;
-  width: 20%;
-  padding-bottom: 50px;
   margin: 0 auto;
 }
 .gallery .heading h2 {
-  font-size: 3rem;
+  font-size: var(--font-size-headline-tablet);
   font-weight: bolder;
-  padding-bottom: 10px;
-  border-bottom: 0.3rem solid var(--color-gray);
+  padding-bottom: 1rem;
 }
 .gallery .heading h2 span {
   font-weight: 100;
