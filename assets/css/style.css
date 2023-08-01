@@ -461,16 +461,18 @@
   overflow: hidden;
 }
 .cta-text-box {
-  padding: 4.8rem 2rem 6.4rem 2rem;
+  padding: 4rem 8rem;
   color: var(--color-white);
 }
 .cta .heading-secondary {
   color: inherit;
+  text-align: center;
   margin-bottom: 3.2rem;
 }
 .cta-text {
   font-size: var(--font-size-body-tablet);
   line-height: 1.8;
+  text-align: center;
   margin-bottom: 4.8rem;
 }
 .cta-img-box {
