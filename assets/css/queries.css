@@ -310,6 +310,7 @@
   .cta-text {
     font-size: var(--font-size-body-mobile);
     line-height: 1.8;
+    text-align: center;
     margin-bottom: 4.8rem;
   }
   .hero {
