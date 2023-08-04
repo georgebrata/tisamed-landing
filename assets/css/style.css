@@ -5,11 +5,13 @@
   background-color: var(--color-white);
 
   height: 9.6rem;
-  padding: 0 4.8rem;
+  padding: 1.5rem 1rem 5.5rem 1rem;
   position: relative;
 }
+
 .logo {
   height: 7rem;
+  margin-top: 40px;
 }
 
 .main-nav-list {
@@ -95,6 +97,38 @@
   background-color: var(--color-white);
   margin: 8rem 0 0rem 0;
   padding-top: 2rem;
+}
+
+.homepage-section-hero {
+  background-color: var(--color-white);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.color-primary {
+  color: var(--color-primary-light);
+}
+
+.hover-primary:hover {
+  color: var(--color-primary-light);
+  cursor: none;
+}
+
+.hover-dark:hover {
+  color: var(--color-primary-dark);
+  cursor: none;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.centered-row {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
 }
 
 .hero {
@@ -228,8 +262,10 @@
 
 .section-meals {
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
+
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
@@ -537,6 +573,7 @@
   list-style: none;
   display: flex;
   gap: 2.4rem;
+  margin-bottom: 2rem;
 }
 .social-icon {
   height: 2.4rem;
