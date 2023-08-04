@@ -573,6 +573,7 @@
   list-style: none;
   display: flex;
   gap: 2.4rem;
+  margin-bottom: 2rem;
 }
 .social-icon {
   height: 2.4rem;
