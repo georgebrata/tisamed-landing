@@ -472,7 +472,7 @@
 .cta-text {
   font-size: var(--font-size-body-tablet);
   line-height: 1.8;
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 4.8rem;
 }
 .cta-img-box {
