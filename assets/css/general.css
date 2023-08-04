@@ -1,7 +1,7 @@
 :root {
   --color-primary-light: #26a65b;
   --color-primary-light-2: #2bbc67;
-  --color-primary-dark: #edf6f9;
+  --color-primary-dark: #081b00;
   --color-tertiary-light: #bc4749;
   --color-tertiary-light-2: #c25859;
   --color-white: #f8f8f8;
@@ -80,6 +80,12 @@ body {
   font-weight: 700;
   color: var(--color-gray);
   letter-spacing: -0.5px;
+}
+.heading-centered {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  text-align: center;
 }
 .heading-primary {
   font-size: var(--font-size-head-l-screen);
