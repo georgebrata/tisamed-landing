@@ -99,6 +99,38 @@
   padding-top: 2rem;
 }
 
+.homepage-section-hero {
+  background-color: var(--color-white);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.color-primary {
+  color: var(--color-primary-light);
+}
+
+.hover-primary:hover {
+  color: var(--color-primary-light);
+  cursor: none;
+}
+
+.hover-dark:hover {
+  color: var(--color-primary-dark);
+  cursor: none;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.centered-row {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -230,8 +262,10 @@
 
 .section-meals {
   padding-top: 2rem;
-  margin-top: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
+
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
