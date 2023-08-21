@@ -95,10 +95,10 @@ body {
 .heading-secondary {
   font-size: var(--font-size-headline-desktop);
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 4rem;
 }
 .heading-secondary--title {
-  text-align: center;
+  text-align: left;
 }
 
 .cta-text-box .heading-secondary--form {
@@ -127,7 +127,7 @@ body {
 }
 
 .subheading--title {
-  text-align: center;
+  text-align: left;
 }
 .btn,
 .btn:link,
