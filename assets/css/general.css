@@ -5,7 +5,7 @@
   --color-tertiary-light: #bc4749;
   --color-tertiary-light-2: #c25859;
   --color-white: #f8f8f8;
-  --color-gray: #495057;
+  --color-gray: #081b00;
   --color-gray-light: #ced4da;
   --font-size-body-mobile: 1.5rem;
   --font-size-body-tablet: 1.5rem;
@@ -30,7 +30,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: var(--color-gray);
@@ -95,10 +95,10 @@ body {
 .heading-secondary {
   font-size: var(--font-size-headline-desktop);
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 4rem;
 }
 .heading-secondary--title {
-  text-align: center;
+  text-align: left;
 }
 
 .cta-text-box .heading-secondary--form {
@@ -127,7 +127,7 @@ body {
 }
 
 .subheading--title {
-  text-align: center;
+  text-align: left;
 }
 .btn,
 .btn:link,
