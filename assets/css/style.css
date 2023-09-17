@@ -90,6 +90,16 @@
   border-bottom: 2px solid var(--color-primary-light);
 }
 
+.main-nav-link--btn-online {
+  border: none;
+  background: green;
+  color: #fff;
+  display: inline-block;
+  padding: 0 2.5rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -218,6 +228,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  @media (max-width: 34em) {
+    justify-content: center;
+  }
 }
 .delivered-imgs img {
   height: 9.6rem;
