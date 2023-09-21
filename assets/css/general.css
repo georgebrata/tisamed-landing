@@ -19,7 +19,7 @@
   --font-size-head-mobile: 2.8rem;
   --font-size-head-tablet: 3.2rem;
   --font-size-head-desktop: 4.5rem;
-  --font-size-head-l-screen: 5.7rem;
+  --font-size-head-l-screen: 7.7rem;
   --font-size-headline-mobile: 2.4rem;
   --font-size-headline-tablet: 2.4rem;
   --font-size-headline-desktop: 2.4rem;
@@ -103,7 +103,7 @@ body {
 .heading-tertiary {
   font-weight: 700;
   color: var(--color-gray);
-  letter-spacing: -0.5px;
+  /* letter-spacing: -0.5px; */
 }
 .heading-centered {
   margin-bottom: 10rem;
