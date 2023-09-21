@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hydrated">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,6 +20,8 @@
   <meta property="og:description"
     content="Cabinet medical obstetrică-ginecologie Tisamed cu vastă experienţă acumulată în domeniul medical, vă oferă consultant medicala la cea mai înaltă calitate." />
   <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/logos/app-logo.png" type="image/x-icon" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
@@ -34,8 +36,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="../assets/images/logos/app-logo.png" type="image/x-icon" />
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="../script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet" />
+  <!-- Hotjar Tracking Code for https://tisamed-oradea.ro -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: 3595685, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
   <link rel="stylesheet" href="../assets/css/general.css" />
   <link rel="stylesheet" href="../assets/css/style.css" />
@@ -64,7 +86,7 @@
 
 <body>
   <header class="header">
-    <a href="../">
+    <a href="../" class="header-logo">
       <img class="logo" alt="Tisamed logo" src="../assets/images/logos/app-logo.png" />
     </a>
 
@@ -76,132 +98,328 @@
         <li>
           <a class="main-nav-link main-nav-link-active" href="../despre">Despre</a>
         </li>
-        <li><a class="main-nav-link" href="../servicii/">Servicii</a></li>
+        <!-- <li><a class="main-nav-link" href="../servicii/">Servicii</a></li> -->
         <li><a class="main-nav-link" href="../echipa/">Echipa</a></li>
         <li><a class="main-nav-link" href="../galerie/">Galerie</a></li>
+        <!-- <li>
+            <a class="main-nav-link" href="../contact/">Contact</a>
+          </li> -->
         <li>
-          <a class="main-nav-link" href="../contact/">Contact</a>
+          <button class="main-nav-link main-nav-link--btn-online dscheduler-button" disabled>
+            Programare online
+          </button>
         </li>
-        <li>
+        <!-- <li>
           <a class="main-nav-link nav-cta" href="../programare/">Fă o programare</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
     <button class="btn-mobile-nav">
-      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav md hydrated" name="menu-outline" role="img" aria-label="menu outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav md hydrated" name="close-outline" role="img" aria-label="close outline">
+      </ion-icon>
     </button>
   </header>
   <main>
     <section class="section-how">
-      <div class="container">
-        <span class="subheading subheading--title">Despre noi</span>
-        <h2 class="heading-secondary heading-secondary--title">
-          Bine ați venit pe site-ul TISAMED, cabinetul dvs. de încredere
-          pentru obstetrică și ginecologie în Oradea.
-        </h2>
+      <div id="desprenoi" class="container">
+        <span class="subheading">Cine suntem?</span>
+        <!-- <h2 class="heading-secondary">Bine ați venit la TISAMED</h2> -->
       </div>
 
       <div class="container grid grid--2-cols grid--center-v">
         <!-- STEP 01 -->
         <div class="step-text-box">
           <p class="step-number">01</p>
-          <h3 class="heading-tertiary">De ce a fost fondat Tasued</h3>
+          <h3 class="heading-tertiary">Povestea noastră</h3>
           <p class="step-description">
-            TISAMED a fost fondat cu scopul de a oferi servicii medicale de
-            înaltă calitate în domeniul obstetricii și ginecologiei. Echipa
-            noastră de medici specializați este dedicată îmbunătățirii
-            sănătății și bunăstării femeilor din Oradea și împrejurimi. Cu o
-            abordare caldă și prietenoasă, ne asigurăm că fiecare pacientă
-            este tratată cu respect și empatie
+            În Oradea, există un loc special unde începe povestea fiecărei femei - <b
+              class="hover-primary">Tisamed</b>. Suntem o echipă de 3 profesioniști cu peste 20 de ani de experiență în domeniu dedicați să vă îngrijim în cele mai importante momente ale vieții voastre. 
           </p>
         </div>
 
         <div class="step-img-box">
-          <img src="../assets/images/app/app-screen-1.png" class="step-img" alt="Step IMG
-            preferences selection screen" />
+          <img src="../assets/images/app/app-screen-3.png" class="step-img" alt="app screen
+          preferences selection screen" />
         </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script defer src="../script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,700&display=swap"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <!-- Hotjar Tracking Code for https://tisamed-oradea.ro -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3595685, hjsv: 6 };
-        a = o.getElementsByTagName('head')[0];
-        r = o.createElement('script');
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="../">
-        <img
-          class="logo"
-          alt="Tisamed logo"
-          src="../assets/images/logos/app-logo.png"
-        />
-      </a>
         <!-- STEP 02 -->
         <div class="step-img-box">
-          <img src="../assets/images/app/app-screen-2.png" class="step-img" alt="Step IMG
-            meal approving plan screen" />
+          <img src="../assets/images/app/app-screen-2.png" class="step-img" alt="iPhone app
+          meal approving plan screen" />
         </div>
         <div class="step-text-box">
           <p class="step-number">02</p>
-          <h3 class="heading-tertiary">De ce suntem cei mai buni</h3>
+          <h3 class="heading-tertiary">Servicii medicale de încredere</h3>
           <p class="step-description">
-            Ne mândrim cu utilizarea celor mai noi tehnologii și metode pentru
-            a oferi cea mai bună îngrijire posibilă.
+            Oferim servicii medicale de obstetrică și ginecologie precum consultații, ecografii, recoltare Frotiu
+            Babeș Papanicolau, contracepție hormonală, aplicare sterilete, biopsii și ecografii. Mii de pacienți din
+            Oradea au anual încredere în experiența noastră pentru a vă îngriji sănătatea feminină.
           </p>
         </div>
-
 
         <!-- STEP 03 -->
         <div class="step-text-box">
           <p class="step-number">03</p>
-          <h3 class="heading-tertiary">
-            De ce suntem uniciAparatura moderna
-          </h3>
+          <h3 class="heading-tertiary">Experți și tehnologie modernă</h3>
           <p class="step-description">
-            Aparatura principală constă dintr-un ecograf ultra-performant
-            Voluson E8 -unul dintre cele mai performante echipamente
-            disponibile la nivel mondial - care ne oferă posibilitatea de a vă
-            pune la dispoziție imagini 3D si 4D ale fătului.
+            Echipa noastră de experți te poate ajuta în orice moment al drumului tau. Folosim aparatură medicală modernă - cabinetul dispune de un ecograf ultra-performant <b>Voluson E8</b> (unul dintre cele mai performante echipamente disponibile la nivel mondial - care ne oferă posibilitatea  de a vă pune la dispozitie imagini 3D și 4D ale fătului). 
+            <!-- <br>
+            Suntem atenți să oferim îngrijire empatică și profesionistă, punând mereu pacientul în prim plan. -->
           </p>
         </div>
         <div class="step-img-box">
-          <img src="../assets/images/app/app-screen-3.png" class="step-img" alt="iPhone app
-            delivery screen" />
+          <img src="../assets/images/app/app-screen-1.png" class="step-img" alt="iPhone app
+          delivery screen" />
         </div>
       </div>
     </section>
+    <br>
+    <section class="section-cta">
+      <div class="container">
+        <h3 class="heading-secondary heading-centered">
+          Suntem deschiși de Luni până Joi, în următorul orar:
+        </h3>
+
+        <div class="container grid grid--5-cols flex-container">
+          <li class="list-item list-item--outline">
+            <span class="list-icon" name="checkmark-outline">Luni </span>
+            <span>10:00 - 19:00</span>
+          </li>
+          <li class="list-item list-item--outline">
+            <span class="list-icon" name="checkmark-outline">Marti </span>
+            <span>16:00 - 19:00 </span>
+          </li>
+          <li class="list-item list-item--outline">
+            <span class="list-icon" name="checkmark-outline">Miercuri</span>
+            <span>16:00 - 18:00 </span>
+          </li>
+          <li class="list-item list-item--outline">
+            <span class="list-icon" name="checkmark-outline">Joi </span>
+            <span> 09:00 - 13:00 </span>
+          </li>
+          <li class="list-item list-item--outline">
+            <span class="list-icon" name="checkmark-outline">Joi </span>
+            <span> 14:00 - 20:00 </span>
+          </li>
+        </div>
+      </div>
+    </section>
+    <br>
+    <div class="section-how">
+      <div class="container">
+        <span class="subheading subheading--title">Echipa</span>
+        <h2 class="heading-secondary heading-secondary--title heading-centered">
+          Echipa de profesioniști TISAMED
+        </h2>
+      </div>
+
+      <div class="wrapper-grid">
+        <div class="container">
+          <div class="banner-img"></div>
+          <img src="../assets/images/doctors/doc-tira-mirela.png" alt="Dr. Tira Mirela profile image"
+            class="profile-img" />
+          <h1 class="name">Dr. Tira Mirela</h1>
+          <p class="position">Medic Primar Obstetrică Ginecologie</p>
+          <p class="description">
+            Dr. Tira Mirela este un doctor renumit, cu o experiență de peste
+            20 de ani în diagnosticarea și tratarea afecțiunilor de orice fel.
+          </p>
+          <!-- <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-instagram" role="img" aria-label="logo instagram">
+                </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://www.facebook.com/Dr.Tira.Mirela">
+                <ion-icon class="social-icon md hydrated" name="logo-facebook" role="img" aria-label="logo facebook">
+                </ion-icon>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+
+        <div class="container">
+          <div class="banner-img"></div>
+          <img src="../assets/images/doctors/doc-3.jpg" alt="profile image" class="profile-img" />
+          <h1 class="name">Dr. Mocuța Diana</h1>
+          <p class="position">Medic Primar Obstetrică Ginecologie</p>
+          <p class="description">
+            Dr. Andrei Ionescu este un oncolog dedicat, angajat în lupta
+            împotriva cancerului și oferirea de opțiuni de tratament avansate
+            pacienților săi.
+          </p>
+          <!-- <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-instagram" role="img" aria-label="logo instagram">
+                </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-facebook" role="img" aria-label="logo facebook">
+                </ion-icon>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+        <div class="container">
+          <div class="banner-img"></div>
+          <img src="../assets/images/doctors/doc-2.jpg" alt="profile image" class="profile-img" />
+          <h1 class="name">Dr. Luncan Mihai</h1>
+          <p class="position">Medic Specialist Obstetrică Ginecologie</p>
+          <p class="description">
+            Dr. Maria Popa este un pediatru grijuliu și experimentat, devotat
+            oferirii de îngrijiri medicale cuprinzătoare copiilor de toate
+            vârstele.
+          </p>
+          <!-- <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-instagram" role="img" aria-label="logo instagram">
+                </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-facebook" role="img" aria-label="logo facebook">
+                </ion-icon>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <section class="section-meals">
+      <div class="container center-text">
+        <span class="subheading subheading--title">Servicii</span>
+        <h2 class="heading-secondary heading-secondary--title heading-centered">
+          La TISAMED, oferim o gamă largă de servicii medicale <br> inclusiv, dar nu limitat la:
+
+        </h2>
+      </div>
+
+      <div class="container grid grid--3-cols margin-bottom-md">
+        <div class="diets">
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Consultații de rutină </span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Îngrijire prenatală și monitorizarea sarcinii</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Consultaţii obstetrică</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Examen citologic Babeş-Papanicolau</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Ecografie tridimensionala (3D, 4D)</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Consiliere in planificare familială</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Contraceptie orala</span>
+            </li>
+          </ul>
+        </div>
+        <div class="diets">
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Urmărirea sarcinii</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Examen citologic Babeş-Papanicolau</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Ecografie abdominală</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Examen citologic Babeş-Papanicolau </span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Ecografie Doppler</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Consiliere tratament infertilitate</span>
+            </li>
+          </ul>
+        </div>
+        <div class="diets">
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Contracepţie hormonală</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Aplicare sterilete</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Biopsice</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Ecografie abdominala </span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Consiliere probleme infertilitate </span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Insertie și extracție sterilet </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container all-recipes"></div>
+    </section>
+    <br>
+    <section class="section-pricing">
+      <div class="container">
+        <span class="subheading heading-centered">Mii de femei din Oradea aleg anual TISAMED ca partener în îngrijirea
+          sănătății</span>
+        <h2 class="heading-tertiary heading-centered">Nu mai așteptați!</h2>
+        <!-- <p class="cta-text">
+            Sănătatea dvs. este prețioasă. Faceți primul pas către o îngrijire
+            de calitate și creați o programare la TISAMED acum. Faceți clic pe
+            butonul de mai jos pentru a accesa formularul de programare online.
+          </p> -->
+      </div>
+      <div class="centered-row row">
+        <!-- <button class="btn btn--form">Creează programare</button> -->
+        <button class="main-nav-link main-nav-link--btn-online dscheduler-button" disabled>Programare online</button>
+      </div>
+
+
+      <div class="container grid">
+        <aside class="plan-details">
+          Vezi <a class="color-primary hover-dark cursor-pointer" href="/echipa"><b>aici</b></a> lista de servicii.
+        </aside>
+      </div>
+    </section>
+    <br>
   </main>
   <footer class="footer">
     <div class="container grid grid--footer">
@@ -210,11 +428,12 @@
           <img class="logo" alt="Tisamed logo" src="../assets/images/logos/app-logo.png" />
         </a>
 
-        <ul class="social-links">
+        <ul class="social-links-footer">
           <li>
-            <a class="footer-link" href="#">
-              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-            </a>
+            <!-- <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-instagram" role="img" aria-label="logo instagram">
+                </ion-icon>
+              </a> -->
           </li>
           <li>
             <a class="footer-link" href="https://www.facebook.com/Dr.Tira.Mirela">
@@ -222,41 +441,127 @@
             </a>
           </li>
           <!-- <li>
-            <a class="footer-link" href="#">
-              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-            </a>
-          </li> -->
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-twitter" role="img" aria-label="logo twitter">
+                </ion-icon>
+              </a>
+            </li> -->
         </ul>
 
         <p class="copyright">
-          Copyright &copy; <span class="copyright-year">2023</span> Tisamed SRL
+          <!-- Copyright © <span class="copyright-year">2023</span> Tisamed SRL. -->
+          SC Tisamed SRL
         </p>
       </div>
+      <nav class="nav-col"></nav>
 
       <div class="address-col">
         <p class="footer-heading">Contact</p>
         <address class="contacts">
           <p class="address">
-            Ne puteți găsi pe str. Mihai Eminescu, nr. 62, Oradea.
+            str. Mihai Eminescu, nr. 62, Oradea
           </p>
           <p>
-            <a class="footer-link" href="tel:+400722556665">0722 556 665</a><br />
+            <a class="footer-link" href="tel:+400722556665">0722 556 665</a> /
             <a class="footer-link" href="tel:0359443443">0359 443 443</a><br />
             <a class="footer-link" href="mailto:tiramirela@yahoo.com">tiramirela@yahoo.com</a>
           </p>
         </address>
       </div>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Companie</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="../despre/">Despre</a></li>
-          <li><a class="footer-link" href="../echipa">Echipa</a></li>
-          <li><a class="footer-link" href="../servicii">Servici</a></li>
-        </ul>
-      </nav>
+      <!-- <nav class="nav-col">
+          <p class="footer-heading">Companie</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="../">Acasă</a></li>
+            <li><a class="footer-link" href="../galerie/">Galerie</a></li>
+            <li><a class="footer-link" href="../despre/">Despre</a></li>
+            <li><a class="footer-link" href="../echipa">Echipa</a></li>
+            <li>
+              <a class="footer-link" href="../programare/">Fă o programare</a>
+            </li>
+            <li><a class="footer-link" href="../contact/">Contact</a></li>
+          </ul>
+        </nav> -->
     </div>
   </footer>
+
+  <script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName('link'));
+          var head = document.getElementsByTagName('head')[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            var parent = elem.parentElement || head;
+            parent.removeChild(elem);
+            var rel = elem.rel;
+            if (
+              (elem.href && typeof rel != 'string') ||
+              rel.length == 0 ||
+              rel.toLowerCase() == 'stylesheet'
+            ) {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href =
+                url +
+                (url.indexOf('?') >= 0 ? '&' : '?') +
+                '_cacheOverride=' +
+                new Date().valueOf();
+            }
+            parent.appendChild(elem);
+          }
+        }
+        var protocol =
+          window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address =
+          protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        if (
+          sessionStorage &&
+          !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')
+        ) {
+          console.log('Live reload enabled.');
+          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+        }
+      })();
+    } else {
+      console.error(
+        'Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.'
+      );
+    }
+      // ]]>
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+  <script>
+    $.getScript(
+      'https://secure.mydroot.eu/evolvo/api/onlinescheduler/drscheduler.js?rnd=' +
+      Math.ceil(Math.random() * 1000000000),
+      function () {
+        $('.dscheduler-button').PGEYpBmXLo({
+          apikey:
+            'f271486bd6444cd207067bca4e898379c7264395bd5d449c890543dba4b88e188c18ddc58858', //Communication API key
+          labelColor: '#444444', //html color for labels
+          backgroundColor: '#ffffff', //html color for background
+          textColor: '#185abc', //html color for text
+          textBackgroundColor: '#ffffff', //html color for text background
+          buttonColor: '#444444', //html color for button text
+          buttonBackgroundColor: '#efefef', //html color for button background
+          lang: 1, //Interface language 0-English, 1-Romanian, 2-Hungarian
+          selectMedic: '', //Name (alias) of the selected medic
+          selectWorkstation: '', //Name (alias) of the selected workstation
+          privacyPolicyLink: '', //Link to privacy policy
+        });
+      }
+    );
+  </script>
 </body>
 
 </html>

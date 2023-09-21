@@ -35,62 +35,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script defer src="../script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,700&display=swap"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <!-- Hotjar Tracking Code for https://tisamed-oradea.ro -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 3595685, hjsv: 6 };
-        a = o.getElementsByTagName('head')[0];
-        r = o.createElement('script');
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="../">
-        <img
-          class="logo"
-          alt="Tisamed logo"
-          src="../assets/images/logos/app-logo.png"
-        />
-      </a>
-
-  <link rel="stylesheet" href="../assets/css/general.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/queries.css" />
-
-
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
   <script defer src="../script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,700&display=swap" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet" />
   <!-- Hotjar Tracking Code for https://tisamed-oradea.ro -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -107,14 +58,20 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+  <link rel="stylesheet" href="../assets/css/general.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/queries.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script defer src="../script.js"></script>
+  <!-- Hotjar Tracking Code for https://tisamed-oradea.ro -->
 </head>
 
 <body>
   <header class="header">
-    <a href="../">
+    <a href="../" class="header-logo">
       <img class="logo" alt="Tisamed logo" src="../assets/images/logos/app-logo.png" />
     </a>
-
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li>
@@ -128,12 +85,17 @@
         </li>
         <li><a class="main-nav-link" href="../echipa/">Echipa</a></li>
         <li><a class="main-nav-link" href="../galerie/">Galerie</a></li>
+        <!-- <li>
+            <a class="main-nav-link" href="../contact/">Contact</a>
+          </li> -->
         <li>
-          <a class="main-nav-link" href="../contact/">Contact</a>
+          <button class="main-nav-link main-nav-link--btn-online dscheduler-button" disabled>
+            Programare online
+          </button>
         </li>
-        <li>
+        <!-- <li>
           <a class="main-nav-link nav-cta" href="../programare/">Fă o programare</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
 
@@ -242,59 +204,98 @@
           </ul>
         </div>
       </div>
-
       <div class="container all-recipes"></div>
     </section>
   </main>
   <footer class="footer">
     <div class="container grid grid--footer">
       <div class="logo-col">
-        <a href="#" class="footer-logo">
+        <a href="../" class="footer-logo">
           <img class="logo" alt="Tisamed logo" src="../assets/images/logos/app-logo.png" />
         </a>
 
-        <ul class="social-links">
+        <ul class="social-links-footer">
           <li>
-            <a class="footer-link" href="#">
-              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-            </a>
+            <!-- <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-instagram" role="img" aria-label="logo instagram">
+                </ion-icon>
+              </a> -->
           </li>
           <li>
             <a class="footer-link" href="https://www.facebook.com/Dr.Tira.Mirela">
               <ion-icon class="social-icon hover-primary" name="logo-facebook"></ion-icon>
             </a>
           </li>
+          <!-- <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon md hydrated" name="logo-twitter" role="img" aria-label="logo twitter">
+                </ion-icon>
+              </a>
+            </li> -->
         </ul>
 
         <p class="copyright">
-          Copyright &copy; <span class="copyright-year">2023</span> Tisamed SRL
+          <!-- Copyright © <span class="copyright-year">2023</span> Tisamed SRL. -->
+          SC Tisamed SRL
         </p>
       </div>
+      <nav class="nav-col"></nav>
 
       <div class="address-col">
         <p class="footer-heading">Contact</p>
         <address class="contacts">
           <p class="address">
-            Ne puteți găsi pe str. Mihai Eminescu, nr. 62, Oradea.
+            str. Mihai Eminescu, nr. 62, Oradea
           </p>
           <p>
-            <a class="footer-link" href="tel:+400722556665">0722 556 665</a><br />
+            <a class="footer-link" href="tel:+400722556665">0722 556 665</a> /
             <a class="footer-link" href="tel:0359443443">0359 443 443</a><br />
             <a class="footer-link" href="mailto:tiramirela@yahoo.com">tiramirela@yahoo.com</a>
           </p>
         </address>
       </div>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Companie</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="../despre/">Despre</a></li>
-          <li><a class="footer-link" href="../echipa">Echipa</a></li>
-          <li><a class="footer-link" href="../servicii">Servici</a></li>
-        </ul>
-      </nav>
+      <!-- <nav class="nav-col">
+          <p class="footer-heading">Companie</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="../">Acasă</a></li>
+            <li><a class="footer-link" href="../galerie/">Galerie</a></li>
+            <li><a class="footer-link" href="../despre/">Despre</a></li>
+            <li><a class="footer-link" href="../echipa">Echipa</a></li>
+            <li>
+              <a class="footer-link" href="../programare/">Fă o programare</a>
+            </li>
+            <li><a class="footer-link" href="../contact/">Contact</a></li>
+          </ul>
+        </nav> -->
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+  <script>
+    $.getScript(
+      'https://secure.mydroot.eu/evolvo/api/onlinescheduler/drscheduler.js?rnd=' +
+      Math.ceil(Math.random() * 1000000000),
+      function () {
+        $('.dscheduler-button').PGEYpBmXLo({
+          apikey:
+            'f271486bd6444cd207067bca4e898379c7264395bd5d449c890543dba4b88e188c18ddc58858', //Communication API key
+          labelColor: '#444444', //html color for labels
+          backgroundColor: '#ffffff', //html color for background
+          textColor: '#185abc', //html color for text
+          textBackgroundColor: '#ffffff', //html color for text background
+          buttonColor: '#444444', //html color for button text
+          buttonBackgroundColor: '#efefef', //html color for button background
+          lang: 1, //Interface language 0-English, 1-Romanian, 2-Hungarian
+          selectMedic: '', //Name (alias) of the selected medic
+          selectWorkstation: '', //Name (alias) of the selected workstation
+          privacyPolicyLink: '', //Link to privacy policy
+        });
+      }
+    );
+  </script>
 </body>
 
 </html>
