@@ -20,6 +20,10 @@
     -ms-grid-columns: (1fr) [3];
     grid-template-columns: repeat(3, 1fr);
   }
+  .gallery-2 {
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 75em) {
   html {
@@ -76,6 +80,7 @@
   .hero-text-box,
   .hero-img-box {
     text-align: center;
+    padding: 0;
   }
   .hero-img {
     width: 100%;
@@ -102,9 +107,9 @@
     grid-template-columns: 1fr;
   }
   .gallery {
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 50%;
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 30%;
   }
   .cta {
     -ms-grid-columns: 1fr;
@@ -179,6 +184,16 @@
 }
 
 @media (max-width: 44em) {
+  .heading-primary {
+    text-align: center;
+  }
+  .hero-btn-container .dscheduler-button {
+    margin: 0 auto;
+  }
+  .social-links-footer {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
   .wrapper-grid {
     -ms-grid-columns: (1fr) [2];
     grid-template-columns: repeat(2, 1fr);
@@ -296,7 +311,7 @@
     text-align: left;
   }
   .heading-secondary--title {
-    text-align: left;
+    text-align: center;
   }
 }
 @media (max-width: 34em) {

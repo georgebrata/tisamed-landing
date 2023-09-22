@@ -19,7 +19,13 @@
 
   height: 9.6rem;
   padding: 1.5rem 1rem 5.5rem 1rem;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+main {
+  margin-top: 90px;
 }
 
 .header-logo {
@@ -94,6 +100,7 @@
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.11rem;
+  background-color: var(--color-primary-light);
   /* width: 15vw; */
 }
 .dscheduler-button:hover,
@@ -202,6 +209,7 @@
 
 .color-primary {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .hover-primary:hover {
@@ -212,6 +220,7 @@
 .hover-dark:hover {
   color: var(--color-primary-dark);
   cursor: none;
+  text-decoration: underline;
 }
 
 .cursor-pointer {
@@ -814,6 +823,8 @@
   display: flex;
   gap: 2.4rem;
   margin-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .social-icon {
   height: 2.4rem;
@@ -862,10 +873,12 @@
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  color: var(--color-primary-light);
 }
 .footer-link:hover,
 .footer-link:active {
-  color: var(--color-gray);
+  color: var(--color-primary-dark);
+  text-decoration: underline;
 }
 .wrapper-grid {
   display: -ms-grid;

@@ -8,6 +8,7 @@
 :root {
   --color-primary-light: #26a65b;
   --color-primary-light-2: #2bbc67;
+  --color-primary-light-3: #0f7037;
   --color-primary-dark: #081b00;
   --color-tertiary-light: #bc4749;
   --color-tertiary-light-2: #c25859;
@@ -38,7 +39,9 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Futura PT', sans-serif; */
+  font-family: 'Geologica', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: var(--color-gray);
